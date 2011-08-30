@@ -10,8 +10,8 @@
 
 @implementation GitProjectAppDelegate
 
-@synthesize window = _window;
-@synthesize navigationController = _navigationController;
+@synthesize window;
+@synthesize navigationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -63,8 +63,8 @@
 
 - (void)dealloc
 {
-    [_window release];
-    [_navigationController release];
+    [window release];
+    [navigationController release];
     [super dealloc];
 }
 
